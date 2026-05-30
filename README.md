@@ -18,17 +18,11 @@ This project analyses the dynamic relationship between crude oil prices and the 
 ## Repository Structure
 
 ```
-oil-spx-analyzer/
-├── index.html                  # GitHub Pages dashboard site
+Oil_SPX_Analyzer/
+├── index.html
 ├── README.md
-├── Oil_vs_SP500_-_Impact___Analysis.ipynb   # Full analysis notebook
-├── Oil_vs_S_P500_Analyzer.pdf              # Project report PDF
-└── oil_spx_analyzer/           # Python package (if sharing source)
-    ├── data_loader.py
-    ├── analyzer.py
-    ├── events.py
-    ├── report.py
-    └── multi_stock.py
+├── Oil vs SP500 - Impact & Analysis.ipynb
+└── Oil vs S&P500 Analyzer.pdf
 ```
 
 ---
@@ -77,7 +71,7 @@ No external statistical packages (statsmodels, seaborn) — only `pandas`, `nump
 1. Create a new GitHub repository
 2. Upload all files (including `index.html`) to the root
 3. Go to **Settings → Pages → Source → Deploy from branch → `main` / `root`**
-4. Your site will be live at `https://YOUR_USERNAME.github.io/REPO_NAME`
+4. Your site will be live at `[https://tdnidhi.github.io/Oil_SPX_Analyzer]`
 
 ---
 
