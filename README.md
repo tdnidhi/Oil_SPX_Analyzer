@@ -3,7 +3,7 @@
 > Geopolitical Shocks & Market Impact Analysis — Python Programming Project  
 > **Nidhi Tangam Dayananda** | Bloomberg Terminal & Yahoo Finance
 
-[![GitHub Pages](https://img.shields.io/badge/Live%20Site-GitHub%20Pages-00ffaa?style=flat-square)](https://YOUR_USERNAME.github.io/oil-spx-analyzer)
+[![GitHub Pages](https://img.shields.io/badge/Live%20Site-GitHub%20Pages-00ffaa?style=flat-square)](https://tdnidhi.github.io/Oil_SPX_Analyzer)
 
 ---
 
@@ -19,7 +19,7 @@ This project analyses the dynamic relationship between crude oil prices and the 
 
 ```
 Oil_SPX_Analyzer/
-├── index.html
+├── index.html                          # GitHub Pages dashboard site
 ├── README.md
 ├── Oil vs SP500 - Impact & Analysis.ipynb
 └── Oil vs S&P500 Analyzer.pdf
@@ -59,26 +59,17 @@ Oil_SPX_Analyzer/
 - **Log returns:** `r(t) = ln(P(t) / P(t−1))` for stationarity
 - **Rolling correlation:** 30-day Pearson, to capture regime shifts
 - **OLS regression (Part A):** `SPX(t) = α + β × Oil(t) + ε(t)` via NumPy normal equations
-- **Multiple regression (Part B):** `Stock(t) = α + β₁·Oil(t) + β₂·SPX(t) + β₃·VIX(t) + ε(t)` — isolates pure oil sensitivity controlling for broad market and volatility
+- **Multiple regression (Part B):** `Stock(t) = α + β₁·Oil(t) + β₂·SPX(t) + β₃·VIX(t) + ε(t)`
 - **Shock detection:** |oil return| > 3% ≈ 2σ threshold
 
-No external statistical packages (statsmodels, seaborn) — only `pandas`, `numpy`, `matplotlib`, and `yfinance`.
-
----
-
-## Deploying to GitHub Pages
-
-1. Create a new GitHub repository
-2. Upload all files (including `index.html`) to the root
-3. Go to **Settings → Pages → Source → Deploy from branch → `main` / `root`**
-4. Your site will be live at `[https://tdnidhi.github.io/Oil_SPX_Analyzer]`
+No external statistical packages — only `pandas`, `numpy`, `matplotlib`, and `yfinance`.
 
 ---
 
 ## Data Sources
 
-- **Bloomberg Terminal** — SPX daily closing prices, CL1 crude oil front-month futures (Dec 2014–Mar 2026)
-- **Yahoo Finance / yfinance** — 26 S&P 500 stocks, VIX Volatility Index (Part B)
+- **Bloomberg Terminal** — SPX and CL1 daily closing prices (Dec 2014–Mar 2026)
+- **Yahoo Finance / yfinance** — 26 S&P 500 stocks and VIX (Part B)
 
 ---
 
